@@ -1,0 +1,24 @@
+{
+  "name": "chatty",
+  "version": "1.0.0",
+  "description": "use node.js to build a chat server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atrevisanut/chatty.git"
+  },
+  "author": "DevMtn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atrevisanut/chatty/issues"
+  },
+  "homepage": "https://github.com/atrevisanut/chatty#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}
