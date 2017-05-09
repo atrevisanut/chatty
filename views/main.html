@@ -11,6 +11,6 @@
 		<button ng-click="addMessage(newMessage); newMessage = ''">Submit</button> <!-- cleared text after click or submit, setting ng-model = to empty quotes-->
 	</form>
 
-<div ng-repeat="message in messages track by $index"> <img ng-src="{{message.image}}" alt="picture of a cat" style="width: 40px; height:40px; border-radius: 50px;"> {{ message.message }} -{{ message.username }} &nbsp {{ message.time }}</div>
+<div ng-repeat="message in messages track by $index"> <img ng-src="{{message.image}}" alt="picture of a cat" style="width: 40px; height:40px; border-radius: 50px;"> {{ message.message }} -{{ message.username }} {{ message.time }}</div>
 
 </div>
