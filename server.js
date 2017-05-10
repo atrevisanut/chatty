@@ -62,9 +62,3 @@ app.options('/', function(req,res){
 app.listen(3000, function(){
     console.log("listening on port 3000")
 });
-
-// Gotcha'
-// the port couldn't be 8000 for some reason
-// don't forget to send the options'
-//live-server didn't work for a student, options wasn't there, and the in the service it was http://localhost:8000 without the /messages on the end
-//headers were also missing for get and post
