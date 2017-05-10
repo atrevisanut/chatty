@@ -42,10 +42,7 @@ app.post('/', function(req, res) {
 	    'Content-Type': 'application/json',
 	    'Access-Control-Allow-Origin': '*',
 	    'Access-Control-Allow-Methods': 'OPTIONS, GET, POST',
-	    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
-	    'X-XSS-Protection': '1; mode=block',
-	    'X-Frame-Options': 'SAMEORIGIN',
-	    'Content-Security-Policy': "default-src 'self' devmountain.github.io"
+	    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
     }).send(JSON.stringify(messages));
 })
 
@@ -62,8 +59,6 @@ app.options('/', function(req,res){
  
 })
 
-
-
 app.listen(3000, function(){
     console.log("listening on port 3000")
 });
@@ -71,3 +66,5 @@ app.listen(3000, function(){
 // Gotcha'
 // the port couldn't be 8000 for some reason
 // don't forget to send the options'
+//live-server didn't work for a student, options wasn't there, and the in the service it was http://localhost:8000 without the /messages on the end
+//headers were also missing for get and post
